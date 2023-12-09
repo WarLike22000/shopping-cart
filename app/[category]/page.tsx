@@ -20,7 +20,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:max-w-7xl lg:px-8">
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center border-b py-2 justify-between">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                 {data[0]?.categoryName}
             </h2>

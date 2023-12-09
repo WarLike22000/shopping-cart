@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
             <Link href="/">
                 <h1 className="text-2xl md:text-4xl font-bold">
-                    Next<span className="text-primary">Commerce</span>
+                    <span className="text-primary">Commerce</span>
                 </h1>
             </Link>
 
@@ -43,10 +43,10 @@ const Navbar = () => {
                 ))}
             </nav>
 
-            <div className="flex divide-x border-t sm:border-l">
+            <div className="flex border-x sm:border-l">
                 <Button
-                    variant={'outline'}
-                    className="flex flex-col gap-y-1.5 h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24"
+                    variant={'ghost'}
+                    className="flex flex-col gap-y-1.5 border-none h-12 w-12 sm:h-20 sm:w-20 md:h-24 md:w-24"
                     onClick={() => onOpen()}
                 >
                     <ShoppingBag />
