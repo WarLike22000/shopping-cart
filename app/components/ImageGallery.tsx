@@ -25,7 +25,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({
             {images?.map((image: any, index: any) => (
                 <div
                     key={index}
-                    className="overflow-hidden rounded-lg bg-gray-100"
+                    className="overflow-hidden h-fit rounded-lg bg-gray-100"
                 >
                     <Image
                         src={urlFor(image).url()}
