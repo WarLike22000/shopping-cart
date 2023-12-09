@@ -1,8 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Vazirmatn } from 'next/font/google'
 import './globals.css'
+import Navbar from './components/Navbar'
+import ShoppingCartModal from './components/ShoppingCartModal'
+import { Toaster } from 'react-hot-toast'
 
-const inter = Inter({ subsets: ['latin'] })
+const vazir = Vazirmatn({ 
+  subsets: ['arabic'],
+  weight: "600",
+  variable: "--font-vazir"
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +22,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fa" dir='rtl'>
+      <body className={`${vazir.variable} font-vazir`}>
+        <Navbar />
+        <ShoppingCartModal />
+        <Toaster />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
